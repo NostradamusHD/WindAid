@@ -54,7 +54,7 @@
     }
 
     &.header--light{
-      position: relative;
+      position: fixed;
       background: $blanco;
       height: auto;
     }
@@ -98,7 +98,7 @@
   }
 
   &__menu{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: calc(100vh - 75px);
     top: 75px;
@@ -112,8 +112,8 @@
     }
 
     &.header--light{
-      position: relative;
-      top: 0;
+      position: fixed;
+      top: 72px;
     }
   }
 
@@ -159,6 +159,7 @@
   &__headband{
     background: linear-gradient(72.12deg, rgba(24, 165, 11, 0.81) 28.3%, rgba(0, 68, 36, 0.81) 71.38%), url("../images/impact-image-1.png");
     height: 300px;
+    margin-top: 74px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -311,6 +312,7 @@
       &.menu_active{
         background: none !important;
       }
+
       &.header--light{
         position: relative;
         background: $color-primario !important;
@@ -324,6 +326,10 @@
       padding: 1rem 0;
       display: block;
       top: 60px;
+      &.header--light{
+        position: relative;
+        top:0;
+      }
     }
 
     &__caption{
@@ -345,6 +351,9 @@
       }
     }
 
+    &__headband{
+      margin: 0;
+    }
     .languaje{
       margin: 0;
       justify-content: flex-start;
@@ -354,12 +363,13 @@
       }
 
       &--light{
-      .languaje__select,
-      .languaje__icon{
-        color: $blanco;
+        .languaje__select,
+        .languaje__icon{
+          color: $blanco;
+        }
       }
     }
-    }
+
     .menu_primary{
       height: auto;
       background: none;
