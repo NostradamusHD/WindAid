@@ -1,0 +1,236 @@
+.section{
+    padding: 3.5rem 0;
+
+    &--bg-image-2{
+        background: linear-gradient(rgba($color: $color-primario, $alpha: 0.85), rgba($color: $color-primario, $alpha: 0.85)), url("../images/home-image-3.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &--bg-image-3{
+        background: linear-gradient(rgba($color: $color-primario, $alpha: 0.85), rgba($color: $color-primario, $alpha: 0.85)), url("../images/about-image-2.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        text-align: center;
+
+        &--white{
+            color: $blanco;
+        }
+    }
+}
+
+.section_who{
+
+    &__bgimage{
+        background: linear-gradient(rgba(240, 177, 14, 0.85), rgba(240, 177, 14, 0.85)), url("../images/home-image-2.png");
+        background-size: cover;
+        padding: 4rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        &__icon{
+            color: $blanco;
+            font-size: 5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &__text{
+            color: $blanco;
+            text-align: center;
+        }
+    }
+
+    &__card{        
+        height: 400px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+    }
+
+    .card_option{
+        border: 1px solid $color-primario;
+        padding: 2rem;
+        text-align: center;
+        cursor:pointer;
+        transition: all .3s;
+
+        i{
+            color: $color-primario;
+            font-size: $fz-large;
+        }
+
+        &_title{
+            color: $color-primario;
+            font-weight: $w-regular;
+            margin-bottom: 0;
+            margin-top: 1rem;
+        }
+        
+        &:hover{
+            background: $color-primario;
+            box-shadow: 0px 13px 11px -2px rgba(0,0,0,0.22);
+
+            i,h4{
+            color: $blanco;
+            font-weight: $w-light;
+            }
+        }
+    }
+}
+
+.section_together{
+    text-align: center;
+    
+    &__item{
+        margin-bottom: 3rem;
+        color: $blanco;
+        .h1{
+            margin-bottom: 2.3rem;
+        }
+        .text{
+            color: $blanco;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+    @media(min-width: 1024px){
+        &__item{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.section_projects{
+    &__image{
+        height: 400px;
+    }
+
+    &__text{
+        padding: 2rem;
+        
+        &--gray{
+            background: #F7F7F7;
+        }
+        .h3{
+            margin-bottom: 1rem;
+        }
+
+        .paragrah{
+            font-size: 1rem;
+            line-height: 150%;
+            margin-bottom: 2.5rem;
+        }
+    }
+    
+    &__card{
+        text-align: center;
+        margin-bottom: 2rem;
+
+        &__figure{
+            height: 400px;
+        }
+        
+        &__content{
+            border-left: 1px dashed $color-primario;
+            border-right: 1px dashed $color-primario;
+            border-bottom: 1px dashed $color-primario;
+            padding: 2rem;
+        }
+
+        .h4{
+            font-size: 23px;
+            line-height: 27px;
+            margin-bottom: 1.5rem;
+        }
+
+        .text{
+            font-size: 1rem;
+            line-height: 150%;
+            margin-bottom: 1.5rem;
+        }
+    }
+    @media (min-width:1024px) {
+
+        &__image{
+            height: 100%;
+        }
+
+        &__card{
+            &__figure{
+                height: auto;
+            }
+        }
+    }
+}
+
+.section_brands{
+    background: #F7F7F7;
+    text-align: center;
+
+    &__item{
+        filter: grayscale(100%);
+    }
+}
+
+.section_mision{
+
+    &__title{
+        color: $blanco;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        @media (min-width:520px) {
+            font-size: 1.7rem;
+            font-weight: 400;
+        }
+    }
+
+    &__text{
+        color: $blanco;
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+    &__item{
+        &:nth-child(3){
+            margin-top: 5rem;
+
+            @media (min-width:1024px) {
+                margin: 0;
+            }
+        }
+    }
+
+    
+}
+
+.section_contact{
+
+    &__figure{
+        height: 200px;
+    }
+    &__map{
+        height: 400px;
+        background:  #F7F7F7;
+    }
+
+    @media (min-width: 1024px) {
+        &__figure,
+        &__map{
+            height: 100%;
+        }
+    }
+}

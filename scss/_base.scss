@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+    color: $color-text;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $font !important;
+}
+
+.h1{
+    font-weight: $w-bold;
+    font-size: $fz-ultra-large;
+}
+.h2{
+    font-weight: $w-bold;
+    font-size: $fz-large;
+}
+.h3{
+    font-weight: $w-bold;
+    font-size: $fz-normal;
+}
+.h4{
+    font-weight: $w-bold;
+    font-size: $fz-medium;
+}
+.h5{
+    font-weight: $w-bold;
+    font-size: $fz-small;
+}
+
+
+@mixin fullzise {
+    width: 100%;
+    height: 100%;
+}
+.image_cover{
+    @include fullzise();
+    object-fit: cover;
+}
+
+.image_contain{
+    @include fullzise();
+    object-fit: contain;
+}
+
+.button_theme{
+    background: #18A50B !important;
+    border-radius: 50px !important;
+    color: $blanco !important;
+    padding: .8em 3.5rem !important;
+    font-size: 1rem;
+
+    &:hover{
+        background: rgb(20, 134, 10) !important;
+    }
+}

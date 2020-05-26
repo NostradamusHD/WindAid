@@ -1,0 +1,40 @@
+.aside{
+    &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__image{
+        width: 100%;
+        height: 381px;
+        background: #0BADE0;
+        margin-bottom: 2rem;
+    }
+
+    &__recommended{
+        width: 100%;
+        padding: 2rem;
+        box-shadow: 0px 4px 50px rgba(118, 118, 118, 0.1);
+
+        &__link{
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: $negro;
+        margin-bottom: 1rem;
+        
+            i{
+                margin-right: .5rem;
+                color: $color-primario;
+            }
+        
+            &:hover{
+                color: $color-primario;
+            }
+    
+        }
+    }
+}
