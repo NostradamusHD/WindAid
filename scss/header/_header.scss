@@ -325,6 +325,7 @@
       height: auto;
       padding: 1rem 0;
       display: block;
+      position: absolute;
       top: 60px;
       &.header--light{
         position: relative;
@@ -392,7 +393,6 @@
       }
 
       &--light{
-
         .menu_primary__link{
           color: $color-text;
           font-weight: 400;
